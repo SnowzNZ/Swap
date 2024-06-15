@@ -1,0 +1,31 @@
+name: Swap
+version: '${project.version}'
+main: dev.snowz.swap.Swap
+description: Swap positions with a player
+commands:
+  swapaccept:
+    usage: /<command>
+    permission: swap.accept
+  swapask:
+    usage: /<command> <player>
+    permission: swap.ask
+    aliases: swapa
+  swapcancel:
+    usage: /<command>
+    permission: swap.cancel
+  swapdeny:
+    usage: /<command>
+    permission: swap.deny
+permissions:
+  swap.ask:
+    description: Allows the player to use the /swapa command
+    default: true
+  swap.accept:
+    description: Allows the player to use the /swapaccept command
+    default: true
+  swap.cancel:
+    description: Allows the player to use the /swapcancel command
+    default: true
+  swap.deny:
+    description: Allows the player to use the /swapdeny command
+    default: true
